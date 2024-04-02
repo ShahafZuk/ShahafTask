@@ -1,0 +1,43 @@
+ private void button1_Click(object sender, EventArgs e)
+        {
+            string field = textBox1.Text;
+            string Operator = textBox2.Text;
+            string Value = textBox3.Text;
+            string startdate = dateTimePicker1.Value.ToString();
+            string enddate = dateTimePicker2.Value.ToString();
+            string connstring = "Data Source = desktop-26a4l4j;Initial Catalog= DATA; Integrated Security=true";
+            SqlConnection con = new SqlConnection(connstring);
+            con.Open();
+            if (startdate == "01/01/2000" || enddate == "01/01/2000")
+            {               
+                if(Operator.Equals(">"))
+                {
+                    string query1 = "SELECT * FROM DATA WHERE field > Value";
+                    SqlCommand cmnd = new SqlCommand(query1, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("<"))
+                {
+                    string query2 = "SELECT* FROM DATA WHERE field < Value";
+                    SqlCommand cmnd = new SqlCommand(query2, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("="))
+                {
+                    string query3 = "SELECT * FROM DATA WHERE field = Value";
+                    SqlCommand cmnd = new SqlCommand(query3, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("!="))
+                {
+                    string query4 = "SELECT * FROM DATA WHERE field != Value";
+                    SqlCommand cmnd = new SqlCommand(query4, con);
+                    cmnd.ExecuteReader();
+                }
+                
+
+            }
+}
