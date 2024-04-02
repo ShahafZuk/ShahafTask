@@ -1,0 +1,33 @@
+          else
+            {
+               
+                if (Operator.Equals(">"))
+                {
+                    string query1 = "SELECT* FROM DATA WHERE(DATEDIFF (dd, startdate, Date_Time) > 0) AND(DATEDIFF(dd, Date_Time, enddate) > 0) AND field > Value";
+                    SqlCommand cmnd = new SqlCommand(query1, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("<"))
+                {
+                    string query2 = "SELECT* FROM DATA WHERE(DATEDIFF (dd, startdate, Date_Time) > 0) AND(DATEDIFF(dd, Date_Time, enddate) > 0) AND field < Value";
+                    SqlCommand cmnd = new SqlCommand(query2, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("="))
+                {
+                    string query3 = "SELECT* FROM DATA WHERE(DATEDIFF (dd, startdate, Date_Time) > 0) AND(DATEDIFF(dd, Date_Time, enddate) > 0) AND field = Value";
+                    SqlCommand cmnd = new SqlCommand(query3, con);
+                    cmnd.ExecuteReader();
+                }
+
+                if (Operator.Equals("!="))
+                {
+                    string query4 = "SELECT* FROM DATA WHERE(DATEDIFF (dd, startdate, Date_Time) > 0) AND(DATEDIFF(dd, Date_Time, enddate) > 0) AND field != Value";
+                    SqlCommand cmnd = new SqlCommand(query4, con);
+                    cmnd.ExecuteReader();
+                }
+
+
+            }
