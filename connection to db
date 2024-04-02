@@ -1,0 +1,8 @@
+string field = textBox1.Text;
+string Operator = textBox2.Text;
+string Value = textBox3.Text;
+string startdate = dateTimePicker1.Value.ToString();
+string enddate = dateTimePicker2.Value.ToString();
+string connstring = "Data Source = desktop-26a4l4j;Initial Catalog= DATA; Integrated Security=true";
+SqlConnection con = new SqlConnection(connstring);
+con.Open();
