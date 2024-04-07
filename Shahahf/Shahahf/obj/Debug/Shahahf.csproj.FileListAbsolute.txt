@@ -1,0 +1,10 @@
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\bin\Debug\Shahahf.exe.config
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\bin\Debug\Shahahf.exe
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\bin\Debug\Shahahf.pdb
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.csprojAssemblyReference.cache
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.Form1.resources
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.Properties.Resources.resources
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.csproj.GenerateResource.cache
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.csproj.CoreCompileInputs.cache
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.exe
+C:\Users\Dudi\source\repos\Shahahf\Shahahf\obj\Debug\Shahahf.pdb
